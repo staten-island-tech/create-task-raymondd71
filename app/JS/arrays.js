@@ -6,6 +6,7 @@ const petList = [
     attentionNeeded: 9,
     lifespan: 8,
     intelligence: 9,
+    imageUrl: "dog.jpg",
   },
   {
     name: "Cat",
@@ -14,6 +15,7 @@ const petList = [
     attentionNeeded: 5,
     lifespan: 9,
     intelligence: 7,
+    imageUrl: "cat.jpg",
   },
   {
     name: "Rabbit",
@@ -22,6 +24,7 @@ const petList = [
     attentionNeeded: 6,
     lifespan: 5,
     intelligence: 5,
+    imageUrl: "rabbit.jpg",
   },
   {
     name: "Hamster",
@@ -30,6 +33,7 @@ const petList = [
     attentionNeeded: 4,
     lifespan: 3,
     intelligence: 3,
+    imageUrl: "",
   },
   {
     name: "Parrot",
@@ -38,6 +42,7 @@ const petList = [
     attentionNeeded: 8,
     lifespan: 10,
     intelligence: 10,
+    imageUrl: "",
   },
   {
     name: "Fish",
@@ -46,6 +51,7 @@ const petList = [
     attentionNeeded: 1,
     lifespan: 3,
     intelligence: 1,
+    imageUrl: "",
   },
   {
     name: "Turtle",
@@ -54,6 +60,7 @@ const petList = [
     attentionNeeded: 2,
     lifespan: 10,
     intelligence: 4,
+    imageUrl: "",
   },
   {
     name: "Snake",
@@ -62,6 +69,7 @@ const petList = [
     attentionNeeded: 2,
     lifespan: 8,
     intelligence: 4,
+    imageUrl: "",
   },
   {
     name: "Guinea Pig",
@@ -70,6 +78,7 @@ const petList = [
     attentionNeeded: 6,
     lifespan: 4,
     intelligence: 5,
+    imageUrl: "",
   },
   {
     name: "Ferret",
@@ -78,5 +87,7 @@ const petList = [
     attentionNeeded: 7,
     lifespan: 6,
     intelligence: 8,
+    imageUrl: "",
   },
 ];
+export { petList };
