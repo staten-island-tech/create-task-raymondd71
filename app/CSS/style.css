@@ -12,7 +12,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.image{
+  height: 20rem;
+  margin-bottom: 1rem
+}
 a {
   font-weight: 500;
   color: #646cff;
@@ -95,9 +98,6 @@ button:focus-visible {
   }
 }
 .card{
-  align-items: center;
-}
-.card{
   height: auto;
   width:21%;
   min-width: 30rem;
@@ -105,10 +105,12 @@ button:focus-visible {
   border-radius: 25px;
   display:flex;
   flex-direction:column; 
-  margin-bottom: 1%;
+  margin-bottom: 3%;
   background-color: lightgreen;
   box-shadow: 5px 5px 5px gray;
-  padding: 0
+  padding: 1px ;
+  align-items: center;
+  line-height: 1px;
 }
 
 .container{

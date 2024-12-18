@@ -16,7 +16,7 @@ function displayPets(petList) {
           <h4> Life: ${pet["lifespan"]}</h4>
           <h4> Intelligence: ${pet["intelligence"]}</h4>
           <img  class ="image"src="${pet["imageUrl"]}" alt="${pet["altText"]}">
-          <img
+        <img
           </div>`
       ),
     id++
