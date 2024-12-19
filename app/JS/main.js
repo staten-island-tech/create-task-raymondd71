@@ -2,14 +2,13 @@ import "../CSS/style.css";
 import { petList } from "./arrays";
 console.log(petList);
 let id = 1;
-function displayPets(petList) {
+function createCards(petList) {
   petList.forEach(
     (pet) =>
       document.querySelector(".container").insertAdjacentHTML(
         "beforeend",
         `<div class= "card" id="card-${id}"> 
           <h1>${pet["name"]}<h1> 
-        
           <h3> Aggression: ${pet["aggressiveness"]} </h3>
           <h4> Affection/Love: ${pet["love"]}</h4>
           <h4> Attention Needed: ${pet["attentionNeeded"]}</h4>
@@ -22,4 +21,4 @@ function displayPets(petList) {
     id++
   );
 }
-displayPets(petList);
+createCards(petList);

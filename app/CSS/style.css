@@ -111,6 +111,7 @@ button:focus-visible {
   padding: 1px ;
   align-items: center;
   line-height: 1px;
+  justify-content: space-around;
 }
 
 .container{
