@@ -1,4 +1,4 @@
-import "../CSS/style.css";
+import "../javascript/style.css";
 import { petList } from "./arrays";
 console.log(petList);
 let id = 1;
@@ -28,12 +28,12 @@ function sortCards(userInput) {
     event.preventDefault();
 
     const userInput = document.getElementById("aff").value;
-    // Captures the input value
-    console.log(userInput); // Logs the input to the console
+    //chat,  Captures the input value
+    console.log(userInput); //chat,  Logs the input to the console
 
     document.getElementById("aff").value = "";
   });
 }
 sortCards();
 
-//const input = document.getElementById("aff").value;
+//chat, const input = document.getElementById("aff").value;

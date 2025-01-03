@@ -11,6 +11,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
+  font-family: "Comic Sans MS";
 }
 
 h1 {
@@ -47,3 +48,7 @@ h1 {
   justify-content: space-around;
   border: 2rem;
 }   
+
+* {
+  margin: 3px 0 0 0 !important;
+}
