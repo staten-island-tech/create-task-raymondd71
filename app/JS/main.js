@@ -22,3 +22,18 @@ function createCards(petList) {
   );
 }
 createCards(petList);
+
+function sortCards(userInput) {
+  document.getElementById("btn").addEventListener("click", function (event) {
+    event.preventDefault();
+
+    const userInput = document.getElementById("aff").value;
+    // Captures the input value
+    console.log(userInput); // Logs the input to the console
+
+    document.getElementById("aff").value = "";
+  });
+}
+sortCards();
+
+//const input = document.getElementById("aff").value;
