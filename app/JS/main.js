@@ -1,8 +1,9 @@
 import "../CSS/style.css";
 import { petList } from "./arrays";
 console.log(petList);
-let id = 1;
+
 function createCards(petList) {
+  let id = 1;
   petList.forEach(
     (pet) =>
       document.querySelector(".container").insertAdjacentHTML(
@@ -26,8 +27,11 @@ createCards(petList);
 function sortCards() {
   document.getElementById("btn").addEventListener("click", function (event) {
     event.preventDefault();
+
     const userInput = document.getElementById("aff").value;
-    const sorted = petList.filter((pet) => pet.affection >= userInput);
+    const sorted = petList.filter(
+      (pet) => pet.love >= parseInt(userInput) // parseint makes string into integer
+    ); // change "love" into a variable so that when i have a drop down menu i can have this code work for each catgory ie; love, lifespan etc
     document.querySelector(".container").innerHTML = "";
     createCards(sorted);
     // Captures the input value
@@ -36,6 +40,6 @@ function sortCards() {
     // document.getElementById("aff").value = "";
   });
 }
-sortCards(9);
+sortCards();
 
 //const input = document.getElementById("aff").value;
