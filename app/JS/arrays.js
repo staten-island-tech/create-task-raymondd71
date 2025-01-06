@@ -6,7 +6,7 @@ const petList = [
     attentionNeeded: 9,
     lifespan: 8,
     intelligence: 9,
-    imageUrl: "dog.jpeg",
+    imageUrl: "dog.jpg",
   },
   {
     name: "Cat",
@@ -15,7 +15,7 @@ const petList = [
     attentionNeeded: 5,
     lifespan: 9,
     intelligence: 7,
-    imageUrl: "cat.jpeg",
+    imageUrl: "cat.jpg",
   },
   {
     name: "Rabbit",
@@ -24,7 +24,7 @@ const petList = [
     attentionNeeded: 6,
     lifespan: 5,
     intelligence: 5,
-    imageUrl: "rabbit.jpeg",
+    imageUrl: "rabbit.jpg",
   },
   {
     name: "Hamster",
@@ -33,7 +33,7 @@ const petList = [
     attentionNeeded: 4,
     lifespan: 3,
     intelligence: 3,
-    imageUrl: "hamster.jpeg",
+    imageUrl: "hamster.jpg",
   },
   {
     name: "Parrot",
@@ -42,7 +42,7 @@ const petList = [
     attentionNeeded: 8,
     lifespan: 10,
     intelligence: 10,
-    imageUrl: "parrot.jpeg",
+    imageUrl: "parrot.jpg",
   },
   {
     name: "Fish",
@@ -51,7 +51,7 @@ const petList = [
     attentionNeeded: 1,
     lifespan: 3,
     intelligence: 1,
-    imageUrl: "fish.jpeg",
+    imageUrl: "fish.jpg",
   },
   {
     name: "Turtle",
@@ -60,7 +60,7 @@ const petList = [
     attentionNeeded: 2,
     lifespan: 10,
     intelligence: 4,
-    imageUrl: "turtle.jpeg",
+    imageUrl: "turtle.jpg",
   },
   {
     name: "Snake",
@@ -69,16 +69,7 @@ const petList = [
     attentionNeeded: 2,
     lifespan: 8,
     intelligence: 4,
-    imageUrl: "snake.jpeg",
-  },
-  {
-    name: "Raymond Dong",
-    aggressiveness: 1,
-    love: 0,
-    attentionNeeded: 100,
-    lifespan: 1,
-    intelligence: -5,
-    imageUrl: "raymond.png",
+    imageUrl: "snake.jpg",
   },
   {
     name: "Guinea Pig",
@@ -87,7 +78,7 @@ const petList = [
     attentionNeeded: 6,
     lifespan: 4,
     intelligence: 5,
-    imageUrl: "gpig.jpeg",
+    imageUrl: "gpig.jpg",
   },
   {
     name: "Ferret",
@@ -96,7 +87,7 @@ const petList = [
     attentionNeeded: 7,
     lifespan: 6,
     intelligence: 8,
-    imageUrl: "ferret.jpeg",
+    imageUrl: "ferret.jpg",
   },
 ];
 export { petList };
