@@ -23,17 +23,17 @@ function createCards(petList) {
 }
 createCards(petList);
 
-function sortCards(userInput) {
+function sortCards() {
   document.getElementById("btn").addEventListener("click", function (event) {
     event.preventDefault();
-
     const userInput = document.getElementById("aff").value;
+    petList.filter((pet) => pet.affection);
     // Captures the input value
     console.log(userInput); // Logs the input to the console
 
     document.getElementById("aff").value = "";
   });
 }
-sortCards();
+sortCards(9);
 
 //const input = document.getElementById("aff").value;
