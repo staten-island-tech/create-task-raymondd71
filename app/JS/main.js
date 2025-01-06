@@ -27,11 +27,13 @@ function sortCards() {
   document.getElementById("btn").addEventListener("click", function (event) {
     event.preventDefault();
     const userInput = document.getElementById("aff").value;
-    petList.filter((pet) => pet.affection);
+    const sorted = petList.filter((pet) => pet.affection >= userInput);
+    document.querySelector(".container").innerHTML = "";
+    createCards(sorted);
     // Captures the input value
     console.log(userInput); // Logs the input to the console
 
-    document.getElementById("aff").value = "";
+    // document.getElementById("aff").value = "";
   });
 }
 sortCards(9);
