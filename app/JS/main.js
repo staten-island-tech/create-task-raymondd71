@@ -2,6 +2,8 @@ import "../CSS/style.css";
 import { petList } from "./arrays";
 console.log(petList);
 
+/* document.querySelector(".affection-button").addEventListener(); */
+
 function createCards(petList) {
   let id = 1;
   petList.forEach(
@@ -43,3 +45,21 @@ function sortCards() {
 sortCards();
 
 //const input = document.getElementById("aff").value;
+
+document
+  .getElementById("dropdownButton")
+  .addEventListener("click", function () {
+    const dropdown = document.getElementById("dropdownContent");
+    // Toggle visibility
+    dropdown.style.display =
+      dropdown.style.display === "block" ? "none" : "block";
+  });
+
+// Close dropdown if clicking outside
+window.addEventListener("click", function (event) {
+  const dropdown = document.getElementById("dropdownContent");
+  const button = document.getElementById("dropdownButton");
+  if (event.target !== button && !button.contains(event.target)) {
+    dropdown.style.display = "none";
+  }
+});
