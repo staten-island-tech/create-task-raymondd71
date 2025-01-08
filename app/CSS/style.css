@@ -70,3 +70,8 @@ h1 {
   text-decoration: none;
   display: block;
 }
+.drop{
+  height:3rem;
+  width:auto;
+  font-size: 15px
+}

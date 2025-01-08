@@ -29,11 +29,11 @@ createCards(petList);
 function sortCards() {
   document.getElementById("btn").addEventListener("click", function (event) {
     event.preventDefault();
-
     const userInput = document.getElementById("aff").value;
+    const category = document.getElementById("drop").value;
     const sorted = petList.filter(
-      (pet) => pet.love >= parseInt(userInput) // parseint makes string into integer
-    ); // change "love" into a variable so that when i have a drop down menu i can have this code work for each catgory ie; love, lifespan etc
+      (pet) => pet[category] >= parseInt(userInput) // parseint makes string into integer
+    ); // it isnt working. Check it
     document.querySelector(".container").innerHTML = "";
     createCards(sorted);
     // Captures the input value

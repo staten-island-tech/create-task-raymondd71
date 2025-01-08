@@ -7,17 +7,15 @@
     <title>Vite App</title>
   </head>
   <body>
-    <div class="dropdown">
-      <button id="dropdownButton">Menu</button>
-      <div id="dropdownContent" class="dropdown-content">
-          <button class="affection-button">Affection</button>
-          <button class="lifespan-button">Lifespan</button>
-
-      </div>
-  </div>
     <form class="form" action="">
-      <h3 id="">Affection</h3>
-          <input type="text" id="aff" placeholder="Enter Here" >
+      <select id="drop"> 
+        <option id="love">Love</option>
+        <option id="life">Life Span</option>
+        <option id="attention">Attention Needed</option>
+        <option id="smart">Intelligence</option>
+      </select>
+      <p></p>
+          <input type="text" id="aff" placeholder="Enter Minimum Value" >
       <p> </p>
       <button type="submit" id="btn">Filter</button>
   </form>
