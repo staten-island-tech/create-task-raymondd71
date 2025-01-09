@@ -12,11 +12,11 @@ function createCards(petList) {
         "beforeend",
         `<div class= "card" id="card-${id}"> 
           <h1>${pet["name"]}<h1> 
-          <h3> Aggression: ${pet["aggressiveness"]} </h3>
-          <h4> Affection/Love: ${pet["love"]}</h4>
-          <h4> Attention Needed: ${pet["attentionNeeded"]}</h4>
-          <h4> Life: ${pet["lifespan"]}</h4>
-          <h4> Intelligence: ${pet["intelligence"]}</h4>
+          <h3> Aggression: ${pet["Aggression"]} </h3>
+          <h4> Affection/Love: ${pet["Love"]}</h4>
+          <h4> Attention Needed: ${pet["Attention_Needed"]}</h4>
+          <h4> Life: ${pet["LifeSpan"]}</h4>
+          <h4> Intelligence: ${pet["Intelligence"]}</h4>
           <img  class ="image"src="${pet["imageUrl"]}" alt="${pet["altText"]}">
         <img
           </div>`
@@ -31,8 +31,9 @@ function sortCards() {
     event.preventDefault();
     const userInput = document.getElementById("numb").value;
     const category = document.getElementById("drop").value;
+    console.log(category);
     const sorted = petList.filter(
-      (pet) => pet[category] >= parseInt(userInput) // parseint makes string into integer
+      (pet) => pet[`${category}`] >= parseInt(userInput) // parseint makes string into integer
     ); // it isnt working. Check it
     document.querySelector(".container").innerHTML = "";
     createCards(sorted);

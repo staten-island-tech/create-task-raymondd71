@@ -22,7 +22,7 @@ h1 {
 }
 .card{
   height: auto;
-  width:21%;
+  width: 21%;
   min-width: 30rem;
   border: 2px solid black;
   border-radius: 25px;
