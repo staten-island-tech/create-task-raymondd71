@@ -17,7 +17,7 @@ function createCards(petList) {
           <h4> Attention Needed: ${pet["Attention_Needed"]}</h4>
           <h4> Life: ${pet["LifeSpan"]}</h4>
           <h4> Intelligence: ${pet["Intelligence"]}</h4>
-          <img  class ="image"src="${pet["imageUrl"]}" alt="${pet["altText"]}">
+          <img class="img" src="${pet["imageUrl"]}" alt="${pet["altText"]}">
         <img
           </div>`
       ),
@@ -34,15 +34,18 @@ function sortCards() {
     console.log(category);
     const sorted = petList.filter(
       (pet) => pet[`${category}`] >= parseInt(userInput) // parseint makes string into integer
-    ); // it isnt working. Check it
+    );
     document.querySelector(".container").innerHTML = "";
     createCards(sorted);
-    // Captures the input value
-    console.log(userInput); // Logs the input to the console
+    const cards = document.querySelector(".container").children; // searches in container and searches for all the children(cards)
+    console.log(cards);
+    const cardcount = cards.length; // counts the amount of cards
+    console.log(`Number of elements in the div: ${cardcount}`);
+    if (cardcount === 0 || cardcount <= 0) {
+      document.querySelector(".container").innerHTML = "No results found";
+    } // iff the card count is 0, it will display no results found
 
-    // document.getElementById("aff").value = "";
+    console.log(userInput); // writes the number inputted into console
   });
 }
 sortCards();
-
-//const input = document.getElementById("aff").value;
