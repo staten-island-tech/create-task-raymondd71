@@ -1,6 +1,6 @@
 .card{
   height: 35rem;
-  width: 34%;
+  width: 30%;
   border: 2px solid black;
   border-radius: 25px;
   display:flex;
@@ -54,4 +54,8 @@
 }
 .img{
   height: 35%;
+}
+
+.body{
+  text-align: center;
 }

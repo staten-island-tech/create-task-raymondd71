@@ -89,5 +89,23 @@ const petList = [
     Intelligence: 8,
     imageUrl: "ferret.jpg",
   },
+  {
+    name: "Axolotl",
+    Aggression: 1,
+    Love: 2,
+    Attention_Needed: 2,
+    LifeSpan: 7,
+    Intelligence: 4,
+    imageUrl: "axolotl.jpg",
+  },
+  {
+    name: "Hedgehog",
+    Aggression: 2,
+    Love: 5,
+    Attention_Needed: 4,
+    LifeSpan: 5,
+    Intelligence: 5,
+    imageUrl: "hedgehog.jpg",
+  },
 ];
 export { petList };

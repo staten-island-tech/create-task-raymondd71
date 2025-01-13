@@ -41,11 +41,20 @@ function sortCards() {
     console.log(cards);
     const cardcount = cards.length; // counts the amount of cards
     console.log(`Number of elements in the div: ${cardcount}`);
-    if (cardcount === 0 || cardcount <= 0) {
+    if (cardcount <= 0) {
       document.querySelector(".container").innerHTML = "No results found";
     } // iff the card count is 0, it will display no results found
+    if (userInput <= 0 || userInput > 10) {
+      document.querySelector(".container").innerHTML = "Invalid Input";
 
-    console.log(userInput); // writes the number inputted into console
+      console.log(userInput); // writes the number inputted into console
+    }
   });
 }
 sortCards();
+
+document.getElementById("reset").addEventListener("click", function (event) {
+  event.preventDefault();
+  document.querySelector(".container").innerHTML = "";
+  createCards(petList);
+});
