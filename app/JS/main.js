@@ -2,8 +2,6 @@ import "../CSS/style.css";
 import { petList } from "./arrays";
 console.log(petList);
 
-/* document.querySelector(".affection-button").addEventListener(); */
-
 function createCards(petList) {
   let id = 1;
   petList.forEach(
