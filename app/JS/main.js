@@ -26,13 +26,14 @@ createCards(petList);
 
 function sortCards() {
   document.getElementById("btn").addEventListener("click", function (event) {
-    event.preventDefault();
-    const userInput = document.getElementById("numb").value;
-    const category = document.getElementById("drop").value;
+    // when button with id btn is clicked it will run function
+    event.preventDefault(); //prevents from refresh
+    const userInput = document.getElementById("numb").value; // userInput is value of input in input box
+    const category = document.getElementById("drop").value; // category is value of the dropdown
     console.log(category);
     const sorted = petList.filter(
       (pet) => pet[`${category}`] >= parseInt(userInput) // parseint makes string into integer
-    );
+    ); // filters the category number for a card is greater than or equal.
     document.querySelector(".container").innerHTML = "";
     createCards(sorted);
     const cards = document.querySelector(".container").children; // searches in container and searches for all the children(cards)
@@ -55,4 +56,4 @@ document.getElementById("reset").addEventListener("click", function (event) {
   event.preventDefault();
   document.querySelector(".container").innerHTML = "";
   createCards(petList);
-});
+}); // resets the cards
